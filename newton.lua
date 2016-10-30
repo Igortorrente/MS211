@@ -21,6 +21,5 @@ function newton(currentX, error)
         nextX    = newtonx(nextX)
         i = i + 1
     end 
-    io.write("Newton = interações: "..i)
-    return nextX    
+    return nextX, i
 end

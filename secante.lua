@@ -31,6 +31,5 @@ function sec(currentX, nextX, error)
 
         i = i + 1
     until math.abs(nextX - currentX) < error and i ~= 10 
-    io.write("Secane = interações: "..i)
-    return nextX      
+    return nextX, i     
 end

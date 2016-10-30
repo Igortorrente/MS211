@@ -9,7 +9,7 @@ require("comonfunc")
 
 --Verifica se os dois números tem o mesmo sinal
 function sameSignal(a, b)
-    return (a > 0 and b > 0) or (a < 0  and b < 0)
+    return a * b > 0
 end
 
 function bissec(infRange, supRange, error)
@@ -29,9 +29,7 @@ function bissec(infRange, supRange, error)
         end
         i = i + 1
     end
-    
-    io.write("Bissec = interações: "..i)
-    return media
+    return media, i
 end
 
 
