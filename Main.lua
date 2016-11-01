@@ -19,7 +19,7 @@ local bissecSup   = 2
 local secInf      = 0.39215754
 
 
-print("Método   Iterações          X                  Fx        ")
+print("Método   Iterações          X                 F(x)        ")
 print("---------------------------------------------------------")
 
 --[[ 
@@ -41,4 +41,4 @@ print(string.format("Newton %7d %21.13f %20.13f", it, preciseAprox, Fx(preciseAp
 preciseAprox, it = sec(secInf, bissecAprox, secError)
 print(string.format("Secante %6d %21.13f %20.13f", it, preciseAprox, Fx(preciseAprox)))
 
-print("\nTempo de execução(s): " .. os.clock())
+print("\nTempo de execução (s): " .. os.clock())
